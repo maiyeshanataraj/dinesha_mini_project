@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 app = Flask(__name__)
 
 # Load model and tokenizer directly
-MODEL_NAME = "sshleifer/distilbart-cnn-6-6"
+MODEL_NAME = "t5-small"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
 
